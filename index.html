@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>0s and Xs</title>
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu:normal,bold,bolder' rel='stylesheet' type='text/css'>
+  
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Chewy'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div id="hidden">Screen too small</div>
+<div id="container">
+  <h1>NOUGHTS & CROSSES</h1>
+  <p id="desc">Play noughts and crosses against a very stupid computer opponent (it just plays randomly). You will need to be very stupid to lose to this guy.</p>
+  <div class="row">
+    <div class="box" id="tl" style="border-top: 0; border-left:0;" onclick="playerTurn('tl')"></div>
+    <div class="box" id="tm" style="border-top: 0;" onclick="playerTurn('tm')"></div>
+    <div class="box" id="tr" style="border-top: 0; border-right:0;" onclick="playerTurn('tr')"></div>
+  </div>
+  <div class="row">
+    <div class="box" id="ml" style="border-left:0;" onclick="playerTurn('ml')"></div>
+    <div class="box" id="mm" onclick="playerTurn('mm')"></div>
+    <div class="box" id="mr" style="border-right:0;" onclick="playerTurn('mr')"></div>
+  </div>
+  <div class="row">
+    <div class="box" id="bl" style="border-bottom: 0; border-left:0;" onclick="playerTurn('bl')"></div>
+    <div class="box" id="bm" style="border-bottom: 0" onclick="playerTurn('bm')"></div>
+    <div class="box" id="br" style="border-bottom: 0; border-right:0;" onclick="playerTurn('br')"></div>
+  </div>
+  <div id="select-container">
+    <div id="select-text">Playing as: X</div>
+    <div class="row">
+      <div class="choice" id="choice1" onclick="choose('O')">O</div>
+      <div class="choice" id="choice2" onclick="choose('X')">X</div>
+    </div>
+  </div>
+</div>
+<div id="info">Choose marker and click on a box to start. The computer will take a turn after you.</div>
+</div>
+
+<p class="footer">Design by<br><a href="mailto:jimmy.chris.hall@gmail.com">Jimmy Hall</a></p>
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>
